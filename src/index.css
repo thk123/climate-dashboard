@@ -65,6 +65,8 @@ h1 {
 	margin: 0px;
 	background-color: #eee;
 	height: 100%;
+	width: 85%;
+	float: right;
 }
 
 h2 {
