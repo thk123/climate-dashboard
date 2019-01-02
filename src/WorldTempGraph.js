@@ -28,7 +28,6 @@ class WorldTempGraph extends React.Component {
 							<YAxis dataKey="temp"/>
 							<Line type="monotone" dataKey="temp" stroke="#8884d8" />
 			</LineChart>
-			<p>Data completely fictious</p>
 			</div>
 		)
 	}
