@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { LineChart, Line, YAxis, XAxis } from 'recharts';
-
 import './index.css';
 import WorldTempGraph from './WorldTempGraph'
 
