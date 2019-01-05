@@ -6,9 +6,8 @@ import { getTestData } from './api-wrapper/test_data'
 import { LineChart, Line, YAxis, XAxis } from 'recharts';
 
 class WorldTempGraph extends React.Component {
-	componentWillReceiveProps(nextProps) {
-    }
-    componentWillMount() {
+	constructor(props) {
+		super(props)
         getTestData()
         	.then(result => {
         		this.setState({data: result.data});
