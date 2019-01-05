@@ -1,29 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { connect } from 'react-redux';
-import { getTestData } from './redux/actions/actions'
+import { getTestData } from './api-wrapper/test_data'
 
 import { LineChart, Line, YAxis, XAxis } from 'recharts';
-
-const mapStateToProps = state => {
-    return {
-        data: state.data.data
-    }
-}
 
 class WorldTempGraph extends React.Component {
 	componentWillReceiveProps(nextProps) {
     }
     componentWillMount() {
-        this.props.getTestData()
+        getTestData()
+        	.then(result => {
+        		this.setState({data: result.data});
+        	})
+			.catch(err => console.log(err))
     }
 
 	render() {
+		if(this.state === null) {
+			return (<p>Loading...</p>)
+		}
 		return (
 			<div>
 			<h2>Global Average Temperature</h2>
-			<LineChart width={400} height={400} data={this.props.data}>
+			<LineChart width={400} height={400} data={this.state.data}>
 							<XAxis dataKey="year"/>
 							<YAxis dataKey="temp"/>
 							<Line type="monotone" dataKey="temp" stroke="#8884d8" />
@@ -33,5 +33,4 @@ class WorldTempGraph extends React.Component {
 	}
 }
 
-//export default WorldTempGraph;
-export default connect(mapStateToProps, { getTestData })(WorldTempGraph);
+export default WorldTempGraph;
