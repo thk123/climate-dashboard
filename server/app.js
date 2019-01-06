@@ -16,5 +16,5 @@ app.use('/api', router)
 
 /** start server */
 app.listen(port, () => {
-    console.log(`Server started at port: ${port}`);
+    console.log(`API Server started at port: ${port}`);
 });
