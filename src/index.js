@@ -15,7 +15,7 @@ class App extends React.Component {
 							<li><a href="index">Dashboard</a></li>
 							<li><a href="emissions">Emissions</a></li>
 							<li><a href="carbon_budget">Carbon Budget</a></li>
-							<li><a href="contribubte">Contribubte</a></li>
+							<li><a href="contribubte">Contribute</a></li>
 						</ul>
 					</div>
 					<div id="content">
