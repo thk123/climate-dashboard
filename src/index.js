@@ -5,10 +5,6 @@ import './index.css';
 import WorldTempGraph from './WorldTempGraph'
 
 class App extends React.Component {
- 	componentDidMount(){
-    	document.title = "Climate Dashboard"
-  	}
-
 	render() {
 		return (
 			<div id="root">
