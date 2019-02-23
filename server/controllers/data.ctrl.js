@@ -4,7 +4,7 @@ var fs = require('fs');
 
 module.exports = {
 	getTestData: (req, res, next) => {
-		const contents = fs.readFileSync('./data/GlobalTemperature.csv', 'utf8');
+		const contents = fs.readFileSync('./server/data/GlobalTemperature.csv', 'utf8');
 		const parsedContents = parse(contents, {delimiter: ','});
 		console.log(parsedContents)
 		const data = parsedContents.map((entry) => { return {year:entry[0], temp:entry[1]}; });

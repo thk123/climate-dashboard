@@ -12,9 +12,5 @@
 # limitations under the License.
 
 # [START gae_quickstart_yaml]
-runtime: nodejs
-env: flex
-resources:
-  cpu: 1
-  memory_gb: 0.8
+runtime: nodejs10
 # [END gae_quickstart_yaml]
