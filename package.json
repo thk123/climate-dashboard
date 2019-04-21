@@ -12,7 +12,7 @@
     "recharts": "^1.4.2"
   },
   "scripts": {
-    "start": "npm start-prod",
+    "start": "npm run start-prod",
     "start-prod": "node server/app.js",
     "start-dev": "node server/app.js & react-scripts start && fg",
     "build": "react-scripts build",
