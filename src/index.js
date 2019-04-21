@@ -12,7 +12,7 @@ class App extends React.Component {
 				<div id="main">
 					<div id="nav-bar">
 						<ul className = "nav">
-							<li><a href="index">Dashboard</a></li>
+							<li><a href="/">Dashboard</a></li>
 							{/* <li><a href="emissions">Emissions</a></li> */}
 							{/* <li><a href="carbon_budget">Carbon Budget</a></li> */}
 							<li><a href="https://github.com/thk123/climate-dashboard">Contribute</a></li>
