@@ -7,7 +7,7 @@ const path = require('path');
 const app = express()
 const router = express.Router()
 
-let port = process.env.PORT || 4999
+let port = process.env.PORT || 3001
 
 const react_build_root = '../build'
 
