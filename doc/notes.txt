@@ -1,0 +1,6 @@
+Personal carbon calculator
+ Find data sources
+   https://clients.fortrenn.com/dev/carbon-latest/dist/data.json
+   https://www.elementascience.org/article/10.1525/elementa.310/
+   http://www.ipcc-data.org/observ/index.html
+ Online database(?)
